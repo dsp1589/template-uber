@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class SignInViewController: MyTaxiBaseViewController {
+class SignInViewController: MyTaxiBaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }

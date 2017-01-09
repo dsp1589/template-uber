@@ -35,8 +35,15 @@ class FloatingPlaceholderTextField: UITextField {
         }else{
             self.removeTarget(self, action: #selector(FloatingPlaceholderTextField.updatePlaceHolderLabelRect), for: .editingChanged)
         }
+        super.willMove(toSuperview: newSuperview)
     }
     
+    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+        var eRect = bounds
+        eRect.size.height -= 1 //eRect.size.height - 1
+        eRect.origin.y -= 1
+        return eRect
+    }
     
     func updatePlaceHolderLabelRect(){
         var pRect = self.placeholderRect(forBounds: self.bounds)
