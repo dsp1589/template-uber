@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65926BE11E230D390003C39D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65926BE01E230D390003C39D /* AppDelegate.swift */; };
+		65926BE31E230D390003C39D /* LoaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65926BE21E230D390003C39D /* LoaderController.swift */; };
+		65926BE61E230D390003C39D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65926BE41E230D390003C39D /* Main.storyboard */; };
+		65926BE81E230D390003C39D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65926BE71E230D390003C39D /* Assets.xcassets */; };
+		65926BEB1E230D390003C39D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65926BE91E230D390003C39D /* LaunchScreen.storyboard */; };
+		65926BF61E230D390003C39D /* My_TaxiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65926BF51E230D390003C39D /* My_TaxiTests.swift */; };
+		65926C021E2312730003C39D /* MyTaxiBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65926C011E2312730003C39D /* MyTaxiBaseViewController.swift */; };
+		65926C051E2314360003C39D /* SignUpInProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65926C041E2314360003C39D /* SignUpInProfileViewController.swift */; };
+		65926C091E2318E40003C39D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65926C081E2318E40003C39D /* Constants.swift */; };
+		65926C0B1E231AA60003C39D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65926C0A1E231AA60003C39D /* SignInViewController.swift */; };
+		65926C0D1E231AD80003C39D /* SignUpViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65926C0C1E231AD80003C39D /* SignUpViewcontroller.swift */; };
+		65926C111E231EC00003C39D /* EmbedCustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65926C101E231EC00003C39D /* EmbedCustomSegue.swift */; };
+		65926C131E2323140003C39D /* MyTaxiBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65926C121E2323140003C39D /* MyTaxiBaseTableViewController.swift */; };
+		65926C181E23399F0003C39D /* FloatingPlaceholderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65926C171E23399F0003C39D /* FloatingPlaceholderTextField.swift */; };
+		65926C1A1E234A4C0003C39D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65926C191E234A4C0003C39D /* Theme.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65926BF21E230D390003C39D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65926BD51E230D390003C39D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65926BDC1E230D390003C39D;
+			remoteInfo = "My Taxi";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65926BDD1E230D390003C39D /* My Taxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Taxi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65926BE01E230D390003C39D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65926BE21E230D390003C39D /* LoaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderController.swift; sourceTree = "<group>"; };
+		65926BE51E230D390003C39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65926BE71E230D390003C39D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65926BEA1E230D390003C39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65926BEC1E230D390003C39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65926BF11E230D390003C39D /* My TaxiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My TaxiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65926BF51E230D390003C39D /* My_TaxiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_TaxiTests.swift; sourceTree = "<group>"; };
+		65926BF71E230D390003C39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65926C011E2312730003C39D /* MyTaxiBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTaxiBaseViewController.swift; path = Controllers/MyTaxiBaseViewController.swift; sourceTree = "<group>"; };
+		65926C041E2314360003C39D /* SignUpInProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpInProfileViewController.swift; sourceTree = "<group>"; };
+		65926C081E2318E40003C39D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Constants/Constants.swift; sourceTree = "<group>"; };
+		65926C0A1E231AA60003C39D /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = Controllers/SignInViewController.swift; sourceTree = "<group>"; };
+		65926C0C1E231AD80003C39D /* SignUpViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewcontroller.swift; sourceTree = "<group>"; };
+		65926C101E231EC00003C39D /* EmbedCustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmbedCustomSegue.swift; sourceTree = "<group>"; };
+		65926C121E2323140003C39D /* MyTaxiBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTaxiBaseTableViewController.swift; sourceTree = "<group>"; };
+		65926C171E23399F0003C39D /* FloatingPlaceholderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingPlaceholderTextField.swift; sourceTree = "<group>"; };
+		65926C191E234A4C0003C39D /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65926BDA1E230D390003C39D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65926BEE1E230D390003C39D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65926BD41E230D390003C39D = {
+			isa = PBXGroup;
+			children = (
+				65926BDF1E230D390003C39D /* My Taxi */,
+				65926BF41E230D390003C39D /* My TaxiTests */,
+				65926BDE1E230D390003C39D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65926BDE1E230D390003C39D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65926BDD1E230D390003C39D /* My Taxi.app */,
+				65926BF11E230D390003C39D /* My TaxiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65926BDF1E230D390003C39D /* My Taxi */ = {
+			isa = PBXGroup;
+			children = (
+				65926C0E1E231E7B0003C39D /* Custom */,
+				65926C071E2318CB0003C39D /* Constants */,
+				65926C001E2312480003C39D /* Controllers */,
+				65926BE01E230D390003C39D /* AppDelegate.swift */,
+				65926BE41E230D390003C39D /* Main.storyboard */,
+				65926BE71E230D390003C39D /* Assets.xcassets */,
+				65926BE91E230D390003C39D /* LaunchScreen.storyboard */,
+				65926BEC1E230D390003C39D /* Info.plist */,
+			);
+			path = "My Taxi";
+			sourceTree = "<group>";
+		};
+		65926BF41E230D390003C39D /* My TaxiTests */ = {
+			isa = PBXGroup;
+			children = (
+				65926BF51E230D390003C39D /* My_TaxiTests.swift */,
+				65926BF71E230D390003C39D /* Info.plist */,
+			);
+			path = "My TaxiTests";
+			sourceTree = "<group>";
+		};
+		65926C001E2312480003C39D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				65926C061E2314770003C39D /* Base */,
+				65926C031E2314090003C39D /* User */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		65926C031E2314090003C39D /* User */ = {
+			isa = PBXGroup;
+			children = (
+				65926BE21E230D390003C39D /* LoaderController.swift */,
+				65926C041E2314360003C39D /* SignUpInProfileViewController.swift */,
+				65926C0A1E231AA60003C39D /* SignInViewController.swift */,
+				65926C0C1E231AD80003C39D /* SignUpViewcontroller.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		65926C061E2314770003C39D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				65926C011E2312730003C39D /* MyTaxiBaseViewController.swift */,
+				65926C121E2323140003C39D /* MyTaxiBaseTableViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		65926C071E2318CB0003C39D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				65926C081E2318E40003C39D /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		65926C0E1E231E7B0003C39D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				65926C161E23397D0003C39D /* Views */,
+				65926C0F1E231E960003C39D /* Segue */,
+				65926C191E234A4C0003C39D /* Theme.swift */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		65926C0F1E231E960003C39D /* Segue */ = {
+			isa = PBXGroup;
+			children = (
+				65926C101E231EC00003C39D /* EmbedCustomSegue.swift */,
+			);
+			name = Segue;
+			sourceTree = "<group>";
+		};
+		65926C161E23397D0003C39D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65926C171E23399F0003C39D /* FloatingPlaceholderTextField.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65926BDC1E230D390003C39D /* My Taxi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65926BFA1E230D390003C39D /* Build configuration list for PBXNativeTarget "My Taxi" */;
+			buildPhases = (
+				65926BD91E230D390003C39D /* Sources */,
+				65926BDA1E230D390003C39D /* Frameworks */,
+				65926BDB1E230D390003C39D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My Taxi";
+			productName = "My Taxi";
+			productReference = 65926BDD1E230D390003C39D /* My Taxi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65926BF01E230D390003C39D /* My TaxiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65926BFD1E230D390003C39D /* Build configuration list for PBXNativeTarget "My TaxiTests" */;
+			buildPhases = (
+				65926BED1E230D390003C39D /* Sources */,
+				65926BEE1E230D390003C39D /* Frameworks */,
+				65926BEF1E230D390003C39D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65926BF31E230D390003C39D /* PBXTargetDependency */,
+			);
+			name = "My TaxiTests";
+			productName = "My TaxiTests";
+			productReference = 65926BF11E230D390003C39D /* My TaxiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65926BD51E230D390003C39D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Systameta;
+				TargetAttributes = {
+					65926BDC1E230D390003C39D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 49N3E55H55;
+						ProvisioningStyle = Automatic;
+					};
+					65926BF01E230D390003C39D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 49N3E55H55;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 65926BDC1E230D390003C39D;
+					};
+				};
+			};
+			buildConfigurationList = 65926BD81E230D390003C39D /* Build configuration list for PBXProject "My Taxi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65926BD41E230D390003C39D;
+			productRefGroup = 65926BDE1E230D390003C39D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65926BDC1E230D390003C39D /* My Taxi */,
+				65926BF01E230D390003C39D /* My TaxiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65926BDB1E230D390003C39D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65926BEB1E230D390003C39D /* LaunchScreen.storyboard in Resources */,
+				65926BE81E230D390003C39D /* Assets.xcassets in Resources */,
+				65926BE61E230D390003C39D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65926BEF1E230D390003C39D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65926BD91E230D390003C39D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65926C091E2318E40003C39D /* Constants.swift in Sources */,
+				65926BE31E230D390003C39D /* LoaderController.swift in Sources */,
+				65926C111E231EC00003C39D /* EmbedCustomSegue.swift in Sources */,
+				65926C0B1E231AA60003C39D /* SignInViewController.swift in Sources */,
+				65926C1A1E234A4C0003C39D /* Theme.swift in Sources */,
+				65926C021E2312730003C39D /* MyTaxiBaseViewController.swift in Sources */,
+				65926C0D1E231AD80003C39D /* SignUpViewcontroller.swift in Sources */,
+				65926C131E2323140003C39D /* MyTaxiBaseTableViewController.swift in Sources */,
+				65926C181E23399F0003C39D /* FloatingPlaceholderTextField.swift in Sources */,
+				65926BE11E230D390003C39D /* AppDelegate.swift in Sources */,
+				65926C051E2314360003C39D /* SignUpInProfileViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65926BED1E230D390003C39D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65926BF61E230D390003C39D /* My_TaxiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65926BF31E230D390003C39D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65926BDC1E230D390003C39D /* My Taxi */;
+			targetProxy = 65926BF21E230D390003C39D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65926BE41E230D390003C39D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65926BE51E230D390003C39D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65926BE91E230D390003C39D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65926BEA1E230D390003C39D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65926BF81E230D390003C39D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65926BF91E230D390003C39D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65926BFB1E230D390003C39D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 49N3E55H55;
+				INFOPLIST_FILE = "My Taxi/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.systameta.ios.commute.My-Taxi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		65926BFC1E230D390003C39D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 49N3E55H55;
+				INFOPLIST_FILE = "My Taxi/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.systameta.ios.commute.My-Taxi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		65926BFE1E230D390003C39D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 49N3E55H55;
+				INFOPLIST_FILE = "My TaxiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.systameta.ios.commute.My-TaxiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My Taxi.app/My Taxi";
+			};
+			name = Debug;
+		};
+		65926BFF1E230D390003C39D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 49N3E55H55;
+				INFOPLIST_FILE = "My TaxiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.systameta.ios.commute.My-TaxiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My Taxi.app/My Taxi";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65926BD81E230D390003C39D /* Build configuration list for PBXProject "My Taxi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65926BF81E230D390003C39D /* Debug */,
+				65926BF91E230D390003C39D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65926BFA1E230D390003C39D /* Build configuration list for PBXNativeTarget "My Taxi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65926BFB1E230D390003C39D /* Debug */,
+				65926BFC1E230D390003C39D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65926BFD1E230D390003C39D /* Build configuration list for PBXNativeTarget "My TaxiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65926BFE1E230D390003C39D /* Debug */,
+				65926BFF1E230D390003C39D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65926BD51E230D390003C39D /* Project object */;
+}

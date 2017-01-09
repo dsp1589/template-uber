@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nU1-u0-9k8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loader View Controller-->
+        <scene sceneID="brv-7Q-62w">
+            <objects>
+                <viewController id="nU1-u0-9k8" customClass="LoaderViewController" customModule="My_Taxi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gCT-xl-i8e"/>
+                        <viewControllerLayoutGuide type="bottom" id="SBs-da-rex"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dtg-jJ-cnw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_logo" translatesAutoresizingMaskIntoConstraints="NO" id="6Jp-MM-0Ly">
+                                <rect key="frame" x="7" y="233" width="360" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="GKo-Mc-YNx"/>
+                                    <constraint firstAttribute="width" constant="360" id="Oia-k9-bzm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Jp-MM-0Ly" firstAttribute="centerX" secondItem="Dtg-jJ-cnw" secondAttribute="centerX" id="Hnw-Hq-Gko"/>
+                            <constraint firstItem="6Jp-MM-0Ly" firstAttribute="centerY" secondItem="Dtg-jJ-cnw" secondAttribute="centerY" id="Zrh-gn-pjQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="UlR-eb-3uA" kind="show" identifier="proceedToSignIn" id="uyv-za-aKI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btE-dU-Xgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66" y="77"/>
+        </scene>
+        <!--Sign Up In Profile View Controller-->
+        <scene sceneID="YSV-Bl-iS1">
+            <objects>
+                <viewController storyboardIdentifier="SIGNINUP" id="UlR-eb-3uA" customClass="SignUpInProfileViewController" customModule="My_Taxi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eht-VR-LIz"/>
+                        <viewControllerLayoutGuide type="bottom" id="f1A-Uy-Bb6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R9u-U3-GkQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" tag="1001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhz-0q-u4s">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </containerView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4N-tA-z0s">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="HxE-eo-duH"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="SIGN IN" id="pBk-dn-Pdq">
+                                        <color key="tintColor" red="0.090196078430000007" green="0.81960784310000001" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="3to-2r-oKR" kind="custom" identifier="proceedToSignIn" customClass="EmbedCustomSegue" customModule="My_Taxi" customModuleProvider="target" id="Z3L-3b-MYh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fD8-Ic-MUz"/>
+                                    <barButtonItem title="My Taxi" id="HmK-70-7dJ">
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="msC-ds-3Xp"/>
+                                    <barButtonItem title="SIGN UP" id="1j1-uV-Hah">
+                                        <color key="tintColor" red="0.090196078430000007" green="0.81960784310000001" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="0OB-kL-69Y" kind="custom" identifier="proceedToSignUp" customClass="EmbedCustomSegue" customModule="My_Taxi" customModuleProvider="target" id="7KJ-S7-BLe"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jhz-0q-u4s" firstAttribute="leading" secondItem="R9u-U3-GkQ" secondAttribute="leading" id="09I-He-Zbf"/>
+                            <constraint firstItem="f1A-Uy-Bb6" firstAttribute="top" secondItem="jhz-0q-u4s" secondAttribute="bottom" id="4sg-Sg-re9"/>
+                            <constraint firstAttribute="trailing" secondItem="b4N-tA-z0s" secondAttribute="trailing" id="6Ch-L8-OwJ"/>
+                            <constraint firstAttribute="trailing" secondItem="jhz-0q-u4s" secondAttribute="trailing" id="FE9-ie-v6i"/>
+                            <constraint firstItem="b4N-tA-z0s" firstAttribute="leading" secondItem="R9u-U3-GkQ" secondAttribute="leading" id="OsR-Rh-ftu"/>
+                            <constraint firstItem="jhz-0q-u4s" firstAttribute="top" secondItem="b4N-tA-z0s" secondAttribute="bottom" id="lJv-o5-hcv"/>
+                            <constraint firstItem="b4N-tA-z0s" firstAttribute="top" secondItem="eht-VR-LIz" secondAttribute="bottom" id="mKk-OI-xNm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HaI-C2-VTA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="20"/>
+        </scene>
+        <!--Personal Details-->
+        <scene sceneID="cA0-cw-hN4">
+            <objects>
+                <tableViewController title="Personal Details" id="0OB-kL-69Y" customClass="SignUpviewController" customModule="My_Taxi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fa1-Yf-5oA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="GOk-zf-rqN">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male_filled" translatesAutoresizingMaskIntoConstraints="NO" id="3O1-m4-X8a">
+                                    <rect key="frame" x="0.0" y="4" width="187.5" height="50"/>
+                                    <color key="tintColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="female_filled" translatesAutoresizingMaskIntoConstraints="NO" id="6kh-AP-920">
+                                    <rect key="frame" x="187.5" y="4" width="187.5" height="50"/>
+                                    <color key="tintColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROFILE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfc-Ne-rwQ">
+                                    <rect key="frame" x="153.5" y="19" width="69" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="6kh-AP-920" firstAttribute="leading" secondItem="3O1-m4-X8a" secondAttribute="trailing" id="A1L-ca-Otm"/>
+                                <constraint firstItem="3O1-m4-X8a" firstAttribute="leading" secondItem="GOk-zf-rqN" secondAttribute="leading" id="Age-4e-ssF"/>
+                                <constraint firstItem="3O1-m4-X8a" firstAttribute="top" secondItem="GOk-zf-rqN" secondAttribute="top" constant="4" id="BPy-zo-Y0k"/>
+                                <constraint firstAttribute="bottom" secondItem="6kh-AP-920" secondAttribute="bottom" constant="4" id="Dpq-IT-0gw"/>
+                                <constraint firstItem="Qfc-Ne-rwQ" firstAttribute="centerY" secondItem="GOk-zf-rqN" secondAttribute="centerY" id="MqY-FN-tac"/>
+                                <constraint firstAttribute="trailing" secondItem="6kh-AP-920" secondAttribute="trailing" id="T7u-Hb-ODN"/>
+                                <constraint firstItem="6kh-AP-920" firstAttribute="top" secondItem="GOk-zf-rqN" secondAttribute="top" constant="4" id="f0p-89-RQb"/>
+                                <constraint firstItem="6kh-AP-920" firstAttribute="width" secondItem="3O1-m4-X8a" secondAttribute="width" id="kmm-2v-Cif"/>
+                                <constraint firstAttribute="bottom" secondItem="3O1-m4-X8a" secondAttribute="bottom" constant="4" id="oBX-Rk-Nkf"/>
+                                <constraint firstItem="Qfc-Ne-rwQ" firstAttribute="centerX" secondItem="GOk-zf-rqN" secondAttribute="centerX" id="xH0-lS-dLc"/>
+                            </constraints>
+                        </view>
+                        <sections>
+                            <tableViewSection id="HuB-eK-NLV">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="name" rowHeight="50" id="pXc-Ic-Fbg">
+                                        <rect key="frame" x="0.0" y="58" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pXc-Ic-Fbg" id="yFe-5t-W1n">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vy2-AM-KzT" customClass="FloatingPlaceholderTextField" customModule="My_Taxi" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="0.0" width="174.5" height="50"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Father name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sfy-Qj-QGc" customClass="FloatingPlaceholderTextField" customModule="My_Taxi" customModuleProvider="target">
+                                                    <rect key="frame" x="192.5" y="0.0" width="174.5" height="50"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Sfy-Qj-QGc" firstAttribute="leading" secondItem="Vy2-AM-KzT" secondAttribute="trailing" constant="2" id="7tr-Z8-a30"/>
+                                                <constraint firstItem="Vy2-AM-KzT" firstAttribute="top" secondItem="yFe-5t-W1n" secondAttribute="top" id="BQG-j3-wpA"/>
+                                                <constraint firstAttribute="bottom" secondItem="Vy2-AM-KzT" secondAttribute="bottom" id="EwJ-ns-c5W"/>
+                                                <constraint firstAttribute="bottom" secondItem="Sfy-Qj-QGc" secondAttribute="bottom" id="MpW-OC-JRF"/>
+                                                <constraint firstItem="Sfy-Qj-QGc" firstAttribute="top" secondItem="yFe-5t-W1n" secondAttribute="top" id="Pa5-Hm-NVY"/>
+                                                <constraint firstItem="Vy2-AM-KzT" firstAttribute="width" secondItem="Sfy-Qj-QGc" secondAttribute="width" id="Toi-rq-Ohk"/>
+                                                <constraint firstItem="Vy2-AM-KzT" firstAttribute="leading" secondItem="yFe-5t-W1n" secondAttribute="leading" constant="16" id="VCV-xy-hi4"/>
+                                                <constraint firstAttribute="trailing" secondItem="Sfy-Qj-QGc" secondAttribute="trailing" constant="8" id="aOK-kl-0gM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="adressLine1" rowHeight="50" id="fKu-hK-KD0">
+                                        <rect key="frame" x="0.0" y="108" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fKu-hK-KD0" id="m5G-2g-qB5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address Line 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nIZ-bV-gP9" customClass="FloatingPlaceholderTextField" customModule="My_Taxi" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="0.0" width="351" height="50"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="nIZ-bV-gP9" secondAttribute="bottom" id="2G4-MC-VKd"/>
+                                                <constraint firstAttribute="trailing" secondItem="nIZ-bV-gP9" secondAttribute="trailing" constant="8" id="Dm0-CH-c5T"/>
+                                                <constraint firstItem="nIZ-bV-gP9" firstAttribute="top" secondItem="m5G-2g-qB5" secondAttribute="top" id="nkh-y0-Jg5"/>
+                                                <constraint firstItem="nIZ-bV-gP9" firstAttribute="leading" secondItem="m5G-2g-qB5" secondAttribute="leading" constant="16" id="qhb-HK-auL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="adressLine2" rowHeight="50" id="8rA-eK-GMx">
+                                        <rect key="frame" x="0.0" y="158" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8rA-eK-GMx" id="6yh-ZV-W8W">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address Line 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ee0-YL-1D6" customClass="FloatingPlaceholderTextField" customModule="My_Taxi" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="0.0" width="351" height="50"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ee0-YL-1D6" secondAttribute="trailing" constant="8" id="CC5-9Y-DXT"/>
+                                                <constraint firstItem="ee0-YL-1D6" firstAttribute="top" secondItem="6yh-ZV-W8W" secondAttribute="top" id="JLD-wk-s9E"/>
+                                                <constraint firstItem="ee0-YL-1D6" firstAttribute="leading" secondItem="6yh-ZV-W8W" secondAttribute="leading" constant="16" id="PWw-yi-iKB"/>
+                                                <constraint firstAttribute="bottom" secondItem="ee0-YL-1D6" secondAttribute="bottom" id="imu-Hc-nG5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DistrictOrCity" rowHeight="50" id="hMS-M5-AuT">
+                                        <rect key="frame" x="0.0" y="208" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hMS-M5-AuT" id="2mn-Go-v3N">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="District/City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9oR-Kw-uNN" customClass="FloatingPlaceholderTextField" customModule="My_Taxi" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="0.0" width="351" height="50"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9oR-Kw-uNN" firstAttribute="top" secondItem="2mn-Go-v3N" secondAttribute="top" id="3Jy-n6-Dsi"/>
+                                                <constraint firstItem="9oR-Kw-uNN" firstAttribute="leading" secondItem="2mn-Go-v3N" secondAttribute="leading" constant="16" id="UQg-AM-hzl"/>
+                                                <constraint firstAttribute="bottom" secondItem="9oR-Kw-uNN" secondAttribute="bottom" id="b4i-W7-3r3"/>
+                                                <constraint firstAttribute="trailing" secondItem="9oR-Kw-uNN" secondAttribute="trailing" constant="8" id="cSR-54-qjA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="town" rowHeight="50" id="p5r-hq-68c">
+                                        <rect key="frame" x="0.0" y="258" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p5r-hq-68c" id="Gsa-PG-BVH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Town" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YTK-iN-myV" customClass="FloatingPlaceholderTextField" customModule="My_Taxi" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="0.0" width="351" height="50"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="YTK-iN-myV" secondAttribute="bottom" id="Npx-yL-xZr"/>
+                                                <constraint firstItem="YTK-iN-myV" firstAttribute="top" secondItem="Gsa-PG-BVH" secondAttribute="top" id="jXl-K1-Qhb"/>
+                                                <constraint firstAttribute="trailing" secondItem="YTK-iN-myV" secondAttribute="trailing" constant="8" id="qGi-dD-kSd"/>
+                                                <constraint firstItem="YTK-iN-myV" firstAttribute="leading" secondItem="Gsa-PG-BVH" secondAttribute="leading" constant="16" id="seh-nb-dz9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="pinCode" rowHeight="50" id="gO2-6X-rtc">
+                                        <rect key="frame" x="0.0" y="308" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gO2-6X-rtc" id="ce7-pf-wEz">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Landmark" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="flc-gC-eso" customClass="FloatingPlaceholderTextField" customModule="My_Taxi" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="0.0" width="351" height="50"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="flc-gC-eso" firstAttribute="top" secondItem="ce7-pf-wEz" secondAttribute="top" id="7Jx-Yo-ejp"/>
+                                                <constraint firstAttribute="bottom" secondItem="flc-gC-eso" secondAttribute="bottom" id="9gq-NK-xZZ"/>
+                                                <constraint firstItem="flc-gC-eso" firstAttribute="leading" secondItem="ce7-pf-wEz" secondAttribute="leading" constant="16" id="WoS-vl-aMl"/>
+                                                <constraint firstAttribute="trailing" secondItem="flc-gC-eso" secondAttribute="trailing" constant="8" id="nVo-Pg-qP0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="continue" rowHeight="50" id="M8e-aJ-XSt" userLabel="continue">
+                                        <rect key="frame" x="0.0" y="358" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M8e-aJ-XSt" id="pB7-6U-TiP">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wx4-QG-Lhr">
+                                                    <rect key="frame" x="114" y="7" width="167" height="36"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="36" id="Yxz-wD-Dhy"/>
+                                                        <constraint firstAttribute="width" constant="167" id="yv6-Mk-MBW"/>
+                                                    </constraints>
+                                                    <size key="titleShadowOffset" width="1" height="0.0"/>
+                                                    <state key="normal" title="Continue">
+                                                        <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wx4-QG-Lhr" firstAttribute="centerX" secondItem="pB7-6U-TiP" secondAttribute="centerX" constant="10" id="8Eo-oK-meQ"/>
+                                                <constraint firstItem="wx4-QG-Lhr" firstAttribute="centerY" secondItem="pB7-6U-TiP" secondAttribute="centerY" id="NRk-8p-vde"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="0OB-kL-69Y" id="WpM-KU-GyT"/>
+                            <outlet property="delegate" destination="0OB-kL-69Y" id="PhC-p7-8ez"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="firstName" destination="Vy2-AM-KzT" id="myB-Hl-fEF"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vx3-m5-oe3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485.5999999999999" y="640.92953523238384"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="qew-3Y-6qH">
+            <objects>
+                <viewController id="3to-2r-oKR" customClass="SignInViewController" customModule="My_Taxi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OeW-bZ-8XJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F00-c3-dra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1486" y="-56"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="female_filled" width="25" height="25"/>
+        <image name="male_filled" width="25" height="25"/>
+        <image name="welcome_logo" width="920" height="356"/>
+    </resources>
+</document>
