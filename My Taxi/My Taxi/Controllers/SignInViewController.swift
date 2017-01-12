@@ -14,4 +14,8 @@ class SignInViewController: MyTaxiBaseTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.performSegue(withIdentifier: "mapView", sender: nil)
+    }
 }

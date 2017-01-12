@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		655893C01E273AD10070B8B6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655893BF1E273AD10070B8B6 /* MapKit.framework */; };
+		655893C31E2741390070B8B6 /* CabRequestWithMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655893C21E2741390070B8B6 /* CabRequestWithMapViewController.swift */; };
+		655893C51E2741870070B8B6 /* DestinationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655893C41E2741870070B8B6 /* DestinationSearchViewController.swift */; };
 		65926BE11E230D390003C39D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65926BE01E230D390003C39D /* AppDelegate.swift */; };
 		65926BE31E230D390003C39D /* LoaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65926BE21E230D390003C39D /* LoaderController.swift */; };
 		65926BE61E230D390003C39D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65926BE41E230D390003C39D /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		655893BF1E273AD10070B8B6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		655893C21E2741390070B8B6 /* CabRequestWithMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CabRequestWithMapViewController.swift; sourceTree = "<group>"; };
+		655893C41E2741870070B8B6 /* DestinationSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationSearchViewController.swift; sourceTree = "<group>"; };
 		65926BDD1E230D390003C39D /* My Taxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Taxi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65926BE01E230D390003C39D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65926BE21E230D390003C39D /* LoaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderController.swift; sourceTree = "<group>"; };
@@ -61,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655893C01E273AD10070B8B6 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +81,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		655893BE1E273AD10070B8B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				655893BF1E273AD10070B8B6 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		655893C11E2740F50070B8B6 /* CabRequest */ = {
+			isa = PBXGroup;
+			children = (
+				655893C21E2741390070B8B6 /* CabRequestWithMapViewController.swift */,
+				655893C41E2741870070B8B6 /* DestinationSearchViewController.swift */,
+			);
+			name = CabRequest;
+			sourceTree = "<group>";
+		};
 		65926BD41E230D390003C39D = {
 			isa = PBXGroup;
 			children = (
 				65926BDF1E230D390003C39D /* My Taxi */,
 				65926BF41E230D390003C39D /* My TaxiTests */,
 				65926BDE1E230D390003C39D /* Products */,
+				655893BE1E273AD10070B8B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +144,7 @@
 		65926C001E2312480003C39D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				655893C11E2740F50070B8B6 /* CabRequest */,
 				65926C061E2314770003C39D /* Base */,
 				65926C031E2314090003C39D /* User */,
 			);
@@ -284,10 +310,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655893C31E2741390070B8B6 /* CabRequestWithMapViewController.swift in Sources */,
 				65926C091E2318E40003C39D /* Constants.swift in Sources */,
 				65926BE31E230D390003C39D /* LoaderController.swift in Sources */,
 				65926C111E231EC00003C39D /* EmbedCustomSegue.swift in Sources */,
 				65926C0B1E231AA60003C39D /* SignInViewController.swift in Sources */,
+				655893C51E2741870070B8B6 /* DestinationSearchViewController.swift in Sources */,
 				65926C1A1E234A4C0003C39D /* Theme.swift in Sources */,
 				65926C021E2312730003C39D /* MyTaxiBaseViewController.swift in Sources */,
 				65926C0D1E231AD80003C39D /* SignUpViewcontroller.swift in Sources */,
